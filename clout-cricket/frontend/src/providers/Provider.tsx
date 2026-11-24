@@ -1,20 +1,18 @@
-import type { ReactNode } from "react";
 import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
-import { ThemeProvider } from "next-themes";
-
+import { ColorModeProvider } from "../components/UI/color-mode";
 
 interface ProviderProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
-const provider = ({ children }: ProviderProps) => {
+const Provider = ({ children }: ProviderProps) => {
   return (
-    <ChakraProvider value={defaultSystem}>
-        <ThemeProvider attribute= "class" defaultTheme="dark" enableSystem= {false}>
-            {children}
-        </ThemeProvider>
-    </ChakraProvider>
+    <ColorModeProvider>
+      <ChakraProvider value={defaultSystem}>
+        {children}
+      </ChakraProvider>
+    </ColorModeProvider>
   );
-}
+};
 
-export default provider;
+export default Provider;

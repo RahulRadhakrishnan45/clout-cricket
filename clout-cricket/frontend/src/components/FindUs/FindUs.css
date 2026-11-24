@@ -1,0 +1,6 @@
+.map-container iframe {
+  display: block;
+  border: none;
+  filter: grayscale(1) invert(0.9) contrast(0.85);
+  transition: filter 0.3s ease;
+}

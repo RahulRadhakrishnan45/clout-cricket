@@ -44,7 +44,7 @@ const Navbar = () => {
                         </Link>
                     ))}
 
-                    <Link href="find-us" display="flex" alignItems="center" gap={2} fontSize="xs" letterSpacing="1px" textTransform="uppercase" color={textColor} _hover={{textDecoration:"none", opacity:0.7}}>
+                    <Link href="#find-us" display="flex" alignItems="center" gap={2} fontSize="xs" letterSpacing="1px" textTransform="uppercase" color={textColor} _hover={{textDecoration:"none", opacity:0.7}}>
                         <MapPin size={15} />
                         Find Your Way to Clout
                     </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
                             </Link>
                         ))}
 
-                        <Link href="find-us" py={4} display="flex" alignItems="center" gap={2} fontSize="sm" letterSpacing="1px" color={textColor} onClick={() => setIsOpen(false)}>
+                        <Link href="#find-us" py={4} display="flex" alignItems="center" gap={2} fontSize="sm" letterSpacing="1px" color={textColor} onClick={() => setIsOpen(false)}>
                             <MapPin size={16} />
                             Find Your Way to Clout
                         </Link>

@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="hero-overlay"></div>
 
             <HeroContent 
-            heading="FIND YOUR WAY TO CLOUT" 
+            heading="Play Bold. Play Clout." 
             description="Gear up for every game. Discover quality cricket equipment designed for players who live and breathe cricket."
             primaryButton={{
                 text: "Explore Collections",
