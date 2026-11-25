@@ -3,12 +3,13 @@ import "./Hero.css";
 
 import DesktopImage from "../../assets/images/cover.webp"
 import MobileImage from "../../assets/images/cover_mob.webp"
+import MobileGif from "../../assets/images/mob_gif1.gif"
 
 const Hero = () => {
     return (
         <section className="hero">
             <picture className="hero-background">
-                <source media="(max-width: 768px)" srcSet={MobileImage} />
+                <source media="(max-width: 768px)" srcSet={MobileGif} />
 
                 <img src={DesktopImage} alt="Clout Cricket" />
             </picture>

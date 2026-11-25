@@ -101,11 +101,13 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: calc(100svh - 70px);
+    min-height: 550px;
+    height: 550px;
     padding: 0 6% 12%;
   }
 
   .hero-background img {
+    object-fit: cover;
     object-position: center;
   }
 
