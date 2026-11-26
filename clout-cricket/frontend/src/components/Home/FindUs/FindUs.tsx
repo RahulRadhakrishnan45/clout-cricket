@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import "./FindUs.css"
-import { useColorMode } from "../UI/color-mode";
+import { useColorMode } from "../../UI/color-mode";
 
 const FindUs = () => {
     const { colorMode } = useColorMode()

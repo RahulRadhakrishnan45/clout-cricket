@@ -3,19 +3,51 @@ html {
 }
 
 :root {
+  /* Footer */
   --footer-bg: #f5f5f5;
   --footer-text: #111111;
   --footer-muted: #555555;
   --footer-accent: #DC2626;
   --footer-hover: #B91C1C;
   --footer-border: #d5d5d5;
+
+  /* Heritage */
+  --story-bg: #f5f5f5;
+  --story-card: #e5e5e5;
+  --story-text: #171717;
+  --story-muted: #666666;
+  --story-border: #d5d5d5;
+
+  /* Manifesto */
+  --manifesto-bg: #ffffff;
+  --manifesto-text: #111111;
+  --manifesto-card-bg: #f5f5f5;
+  --manifesto-muted: #666666;
+  --manifesto-border: #dddddd;
+  --manifesto-accent: #dc2626;
 }
 
 html.dark {
+  /* Footer */
   --footer-bg: #111111;
   --footer-text: #ffffff;
   --footer-muted: #b5b5b5;
   --footer-accent: #d4ff00;
   --footer-hover: #d4ff00;
   --footer-border: #333333;
+
+  /* Heritage */
+  --story-bg: #0d0d0d;
+  --story-card: #1c1c1c;
+  --story-text: #f5f5f5;
+  --story-muted: #a0a0a0;
+  --story-border: #292929;
+
+  /* Manifesto */
+  --manifesto-bg: #111111;
+  --manifesto-text: #ffffff;
+  --manifesto-card-bg: #1c1c1c;
+  --manifesto-muted: #aaaaaa;
+  --manifesto-border: #333333;
+  --manifesto-accent: #dc2626;
 }

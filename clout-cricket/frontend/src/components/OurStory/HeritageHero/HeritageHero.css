@@ -1,0 +1,179 @@
+
+
+
+.heritage-hero {
+  width: 100%;
+  padding: 40px 1%;
+  background: var(--story-bg);
+  color: var(--story-text);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.heritage-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.heritage-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--story-card);
+  color: var(--story-text);
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.heritage-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.heritage-location {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.heritage-content {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.heritage-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.heritage-title {
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+}
+
+.heritage-title span {
+  opacity: 0.55;
+}
+
+.heritage-description {
+  max-width: 780px;
+  font-size: 17px;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.heritage-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.heritage-card {
+  background: var(--story-card);
+  color: var(--story-text);
+  border: 1px solid var(--story-border);
+  padding: 22px 20px;
+  min-height: 115px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.heritage-card:hover {
+  transform: translateY(-4px);
+}
+
+.heritage-card-label {
+  display: block;
+  font-size: 10px;
+  color: var(--story-muted);
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.65;
+  margin-bottom: 10px;
+}
+
+.heritage-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.heritage-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+  .heritage-hero {
+    padding: 30px 5%;
+  }
+
+  .heritage-topbar {
+    margin-bottom: 45px;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .heritage-location {
+    text-align: right;
+    font-size: 8px;
+  }
+
+  .heritage-content {
+    margin-bottom: 40px;
+  }
+
+  .heritage-title {
+    font-size: clamp(36px, 9vw, 52px);
+    letter-spacing: -1.5px;
+  }
+
+  .heritage-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--story-text);
+  }
+
+  .heritage-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .heritage-card {
+    padding: 18px 14px;
+  }
+
+  .heritage-card h3 {
+    font-size: 16px;
+  }
+
+  .heritage-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .heritage-cards {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,20 +1,14 @@
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/pages/Home'
-import FindUs from './components/FindUs/FindUs'
-import ShopByCategory from './components/ShopByCategory/ShopByCategory'
-import Brands from './components/Brands/Brands'
-import BatRepair from './components/BatRepair/BatRepair'
+import Home from './pages/Home/Home'
 import Footer from './components/Footer/Footer'
+import OurStory from './pages/OurStory/OurStory'
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Home />
-      <FindUs />
-      <ShopByCategory />
-      <Brands />
-      <BatRepair />
+      {/* <Home /> */}
+      <OurStory />
       <Footer />
     </>
   )

@@ -1,0 +1,684 @@
+
+.origin-manifesto {
+  width: 100%;
+  padding: 110px 7%;
+  background: var(--manifesto-bg);
+  color: var(--manifesto-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.origin-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.origin-visuals {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 100%;
+}
+
+.origin-main-image {
+  position: relative;
+  width: 100%;
+  height: 395px;
+  overflow: hidden;
+  background: #111111;
+}
+
+.origin-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  transition: transform 0.6s ease;
+}
+
+.origin-main-image:hover img {
+  transform: scale(1.04);
+}
+
+.origin-image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 68px;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.92);
+  color: #ffffff;
+}
+
+.origin-image-label-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.origin-image-label-content span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #999999;
+}
+
+.origin-image-label-content h4 {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+
+.origin-image-label svg {
+  color: #999999;
+  flex-shrink: 0;
+}
+
+.origin-atelier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  min-height: 250px;
+}
+
+.origin-atelier-image {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #1c1c1c;
+}
+
+.origin-atelier-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(0%);
+  transition: transform 0.6s ease, transform 0.6s ease;
+}
+
+html.dark .origin-atelier-image img {
+  filter: grayscale(100%);
+}
+
+html.dark .origin-atelier-image:hover img {
+  filter: grayscale(0%);
+}
+
+.origin-atelier-image:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.origin-atelier-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(15, 15, 15, 0.88);
+  color: #ffffff;
+}
+
+.origin-atelier-image-caption span {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 7px;
+  color: #aaaaaa;
+}
+
+.origin-atelier-image-caption p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.origin-atelier-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 20px 17px;
+  background: var(--manifesto-card-bg);
+  border: 1px solid var(--manifesto-border);
+}
+
+.origin-atelier-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--manifesto-muted);
+}
+
+.origin-atelier-info h3 {
+  font-size: clamp(15px, 1.5vw, 21px);
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--manifesto-text);
+}
+
+.origin-atelier-info p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--manifesto-text);
+}
+
+.origin-founder-note {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background: var(--manifesto-card-bg);
+  border: none;
+  border-left: 3px solid var(--manifesto-accent);
+}
+
+.origin-founder-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--manifesto-muted);
+}
+
+.origin-founder-heading svg {
+  color: var(--manifesto-accent);
+  flex-shrink: 0;
+}
+
+.origin-founder-heading span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.origin-founder-note blockquote {
+  font-size: clamp(17px, 1.8vw, 23px);
+  line-height: 1.5;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--manifesto-text);
+}
+
+.origin-content {
+  padding-top: 10px;
+}
+
+.origin-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.origin-eyebrow-line {
+  width: 35px;
+  height: 2px;
+  background: var(--manifesto-accent);
+}
+
+.origin-content h2 {
+  font-size: clamp(35px, 4vw, 58px);
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+.origin-content h2 span {
+  color: var(--manifesto-accent);
+}
+
+.origin-lead {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 30px 0 12px;
+  color: var(--manifesto-text);
+}
+
+.origin-lead::first-letter {
+  float: left;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  padding-right: 12px;
+  color: var(--manifesto-accent);
+}
+
+.origin-description {
+  font-size: 14px;
+  line-height: 1.9;
+
+  color: var(--manifesto-muted);
+
+  margin-bottom: 22px;
+}
+
+.origin-quote-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin: 32px 0;
+  padding: 30px;
+  background: var(--manifesto-card-bg);
+  border: 1px solid var(--manifesto-border);
+  transition: border-color 0.3s ease;
+}
+
+.origin-quote-card:hover {
+  border-color: var(--manifesto-accent);
+}
+
+.origin-quote-icon {
+  flex-shrink: 0;
+  color: #999999;
+}
+
+.origin-quote-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.origin-quote-content span {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: var(--manifesto-muted);
+}
+
+.origin-quote-content blockquote {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--manifesto-text);
+}
+
+.origin-closing {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-top: 18px;
+  color: var(--manifesto-text);
+}
+
+.origin-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.origin-value-card {
+  padding: 20px 15px;
+  border: 1px solid var(--manifesto-border);
+  background: var(--manifesto-card-bg);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.origin-value-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--manifesto-accent);
+}
+
+.origin-value-card svg {
+  color: var(--manifesto-accent);
+  margin-bottom: 18px;
+}
+
+.origin-value-card h4 {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+}
+
+.origin-value-card p {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--manifesto-muted);
+}
+
+.origin-explore-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+  padding-bottom: 8px;
+  color: var(--manifesto-text);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  border-bottom: 2px solid var(--manifesto-accent);
+  transition: color 0.3s ease;
+}
+
+.origin-explore-link:hover {
+  color: var(--manifesto-accent);
+}
+
+.origin-explore-link svg {
+  transition: transform 0.3s ease;
+}
+
+.origin-explore-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 1024px) {
+
+  .origin-manifesto {
+    padding: 80px 5%;
+  }
+
+  .origin-container {
+    gap: 50px;
+  }
+
+  .origin-main-image {
+    height: 350px;
+  }
+
+  .origin-atelier-grid {
+    min-height: 220px;
+  }
+
+  .origin-atelier-image img {
+    min-height: 220px;
+  }
+
+  .origin-atelier-info {
+    padding: 16px 13px;
+  }
+
+  .origin-atelier-info h3 {
+    font-size: 15px;
+  }
+
+  .origin-atelier-info p {
+    font-size: 11px;
+  }
+
+  .origin-founder-note {
+    padding: 22px;
+  }
+
+  .origin-content h2 {
+    font-size: 42px;
+  }
+
+  .origin-quote-card {
+    padding: 22px;
+  }
+
+  .origin-quote-content blockquote {
+    font-size: 13px;
+  }
+
+  .origin-values {
+    gap: 8px;
+  }
+
+  .origin-value-card {
+    padding: 15px 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .origin-manifesto {
+    padding: 65px 6%;
+  }
+
+  .origin-container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .origin-visuals {
+    gap: 14px;
+  }
+
+  .origin-main-image {
+    height: 350px;
+  }
+
+  .origin-atelier-grid {
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 230px;
+    gap: 8px;
+  }
+
+  .origin-atelier-image img {
+    min-height: 230px;
+  }
+
+  .origin-atelier-info {
+    padding: 16px;
+  }
+
+  .origin-atelier-info h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .origin-atelier-info p {
+    font-size: 12px;
+  }
+
+  .origin-founder-note {
+    padding: 24px;
+  }
+
+  .origin-founder-note blockquote {
+    font-size: 19px;
+  }
+
+  .origin-content {
+    padding-top: 0;
+  }
+
+  .origin-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .origin-content h2 {
+    font-size: clamp(34px, 8vw, 48px);
+    letter-spacing: -1.5px;
+  }
+
+  .origin-lead {
+    font-size: 14px;
+  }
+
+  .origin-description {
+    font-size: 13px;
+  }
+
+  .origin-quote-card {
+    padding: 22px;
+    margin: 28px 0;
+    gap: 14px;
+  }
+
+  .origin-quote-content blockquote {
+    font-size: 14px;
+  }
+
+  .origin-values {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .origin-value-card {
+    padding: 15px 10px;
+  }
+
+  .origin-value-card h4 {
+    font-size: 10px;
+  }
+
+  .origin-value-card p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .origin-manifesto {
+    padding: 50px 5%;
+  }
+
+  .origin-main-image {
+    height: 330px;
+  }
+
+  .origin-image-label {
+    padding: 13px 15px;
+    min-height: 65px;
+  }
+
+  .origin-image-label-content h4 {
+    font-size: 10px;
+  }
+
+  .origin-atelier-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+    min-height: 210px;
+  }
+
+  .origin-atelier-image img {
+    min-height: 210px;
+  }
+
+  .origin-atelier-image-caption {
+    padding: 10px 8px;
+  }
+
+  .origin-atelier-image-caption span {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .origin-atelier-image-caption p {
+    font-size: 10px;
+  }
+
+  .origin-atelier-info {
+    padding: 15px 12px;
+  }
+
+  .origin-atelier-label {
+    font-size: 8px;
+  }
+
+  .origin-atelier-info h3 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .origin-atelier-info p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .origin-founder-note {
+    padding: 22px 18px;
+  }
+
+  .origin-founder-note blockquote {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .origin-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .origin-content h2 {
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .origin-lead {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .origin-lead::first-letter {
+    font-size: 44px;
+  }
+
+  .origin-quote-card {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .origin-quote-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .origin-quote-content span {
+    font-size: 8px;
+  }
+
+  .origin-quote-content blockquote {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .origin-values {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .origin-value-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+  .origin-value-card svg {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .origin-value-card h4 {
+    min-width: 65px;
+    margin-bottom: 0;
+  }
+
+  .origin-value-card p {
+    font-size: 11px;
+  }
+
+  .origin-explore-link {
+    font-size: 10px;
+  }
+}

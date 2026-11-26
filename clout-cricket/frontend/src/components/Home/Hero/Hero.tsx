@@ -1,9 +1,8 @@
 import HeroContent from "./HeroContent";
 import "./Hero.css";
 
-import DesktopImage from "../../assets/images/cover.webp"
-import MobileImage from "../../assets/images/cover_mob.webp"
-import MobileGif from "../../assets/images/mob_gif1.gif"
+import DesktopImage from "../../../assets/images/cover.webp"
+import MobileGif from "../../../assets/images/mob_gif1.gif"
 
 const Hero = () => {
     return (
