@@ -1,4 +1,5 @@
 import './BatRepair.css'
+import { WHATSAPP_LINK } from '../../constants/contact';
 
 interface RepairService {
     title: string;
@@ -26,9 +27,7 @@ const repairServices: RepairService[] = [
 
 const BatRepair = () => {
 
-    const whatsappNumber = "8921191980";
-
-    const message = encodeURIComponent(
+    const whatsappLink = WHATSAPP_LINK(
         "Hi Clout Cricket! I'm interested in your bat repair services."
     );
 
@@ -67,7 +66,7 @@ const BatRepair = () => {
                         ))}
                     </div>
 
-                    <a href={`https://wa.me/${whatsappNumber}?text=${message}`} target="_blank" rel="noopener noreferrer" className="repair-button">
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="repair-button">
                         <span className="repair-arrow">↗</span>
                         BOOK A BAT REPAIR VIA WHATSAPP
                     </a>

@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Box, Flex, HStack, VStack, IconButton, Button, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, HStack, VStack, IconButton, Button, Link } from '@chakra-ui/react';
 import { Menu, X, Sun, Moon, MessageSquare, MapPin } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import Cloutlogo from '../../assets/images/logo.png';
+import { WHATSAPP_LINK } from '../../constants/contact';
 
 const navLinks = [
     { label: 'Home', href: '#home' },
@@ -30,6 +31,10 @@ const Navbar = () => {
     const textColor = isDark ? "#FFFFFF" : "#171717";
     const borderColor = isDark ? "#333333" : "#E5E5E5";
 
+    const whatsappLink = WHATSAPP_LINK(
+        "Hi Clout Cricket! I'm interested in your cricket products."
+    );
+
     return (
         <Box as='header' width='100%' bg={bgColor} color={textColor} borderBottom="1px solid"
         position="sticky" top="0" zIndex="1000">
@@ -51,7 +56,7 @@ const Navbar = () => {
                 </HStack>
 
                 <HStack gap={2}>
-                    <Button display={{ base:"none" , md:"flex" }} variant="outline" borderColor={borderColor} color={textColor} borderRadius="none" size="sm" fontSize="xs" letterSpacing="1px" textTransform="uppercase" _hover={{ bg:isDark ? "#252525" : "#F1F1F1"}}>
+                    <Button as="a" href={whatsappLink} target="_blank" rel="noopener noreferrer" display={{ base:"none" , md:"flex" }} variant="outline" borderColor={borderColor} color={textColor} borderRadius="none" size="sm" fontSize="xs" letterSpacing="1px" textTransform="uppercase" _hover={{ bg:isDark ? "#252525" : "#F1F1F1"}}>
                         Talk to Us
                     </Button>
 
@@ -77,7 +82,7 @@ const Navbar = () => {
                             Find Your Way to Clout
                         </Link>
 
-                        <Button mt={3} width="100%" borderRadius="none" bg={textColor} color={bgColor} onClick={() => setIsOpen(false)} _hover={{opacity:0.8}}>
+                        <Button as="a" href={whatsappLink} target="_blank" rel="noopener noreferrer" mt={3} width="100%" borderRadius="none" bg={textColor} color={bgColor} onClick={() => setIsOpen(false)} _hover={{opacity:0.8}}>
                             <MessageSquare size={16} />
                             Talk to Us
                         </Button>
