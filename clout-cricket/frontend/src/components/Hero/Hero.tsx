@@ -7,7 +7,7 @@ import MobileGif from "../../assets/images/mob_gif1.gif"
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <picture className="hero-background">
                 <source media="(max-width: 768px)" srcSet={MobileGif} />
 

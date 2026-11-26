@@ -4,6 +4,7 @@ import FindUs from './components/FindUs/FindUs'
 import ShopByCategory from './components/ShopByCategory/ShopByCategory'
 import Brands from './components/Brands/Brands'
 import BatRepair from './components/BatRepair/BatRepair'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <ShopByCategory />
       <Brands />
       <BatRepair />
+      <Footer />
     </>
   )
 }

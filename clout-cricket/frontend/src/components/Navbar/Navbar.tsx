@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Box, Flex, HStack, VStack, IconButton, Button, Link } from '@chakra-ui/react';
 import { Menu, X, Sun, Moon, MessageSquare, MapPin } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import Cloutlogo from '../../assets/images/logo.png';
+import Cloutlogo from '../../assets/images/clout-cricket-light-logo.png';
+import CloutlogoDark from '../../assets/images/clout-cricket-dark-logo.png'
 import { WHATSAPP_LINK } from '../../constants/contact';
 
 const navLinks = [
@@ -13,11 +14,14 @@ const navLinks = [
 ]
 
 const Navbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
     
     const {theme, setTheme} = useTheme();
 
     const isDark = theme === "dark";
+
+    const logo = isDark ? CloutlogoDark : Cloutlogo
 
     const toggleMenu = () => {
         setIsOpen((prev) => !prev)
@@ -40,7 +44,7 @@ const Navbar = () => {
         position="sticky" top="0" zIndex="1000">
             <Flex maxWidth="1440px" mx="auto" px={{base: 4, md: 8 , lg: 12}} py={3} align="center" justify="space-between">
                 <Link href="#home" _hover={{ textDecoration: "none"}}>
-                    <img src={Cloutlogo} alt="Clout Cricket" style={{width:"145px", height:"auto", objectFit:"contain"}}/>
+                    <img src={logo} alt="Clout Cricket" style={{width:"145px", height:"auto", objectFit:"contain"}}/>
                 </Link>
                 <HStack gap={{md:4, lg:6}} display={{base:"none", md:"flex"}}>
                     {navLinks.map((link) => (
@@ -56,7 +60,7 @@ const Navbar = () => {
                 </HStack>
 
                 <HStack gap={2}>
-                    <Button as="a" href={whatsappLink} target="_blank" rel="noopener noreferrer" display={{ base:"none" , md:"flex" }} variant="outline" borderColor={borderColor} color={textColor} borderRadius="none" size="sm" fontSize="xs" letterSpacing="1px" textTransform="uppercase" _hover={{ bg:isDark ? "#252525" : "#F1F1F1"}}>
+                    <Button as="a" href={whatsappLink} target="_blank" rel="noopener noreferrer" display={{ base:"none" , md:"flex" }} variant="outline" borderColor={borderColor} color={textColor} borderRadius="none" size="sm" fontSize="xs" letterSpacing="1px" textTransform="uppercase" _hover={{ bg:isDark ? "#252525" : "#F1F1F1"}} >
                         Talk to Us
                     </Button>
 

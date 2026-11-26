@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --footer-bg: #f5f5f5;
+  --footer-text: #111111;
+  --footer-muted: #555555;
+  --footer-accent: #DC2626;
+  --footer-hover: #B91C1C;
+  --footer-border: #d5d5d5;
+}
+
+html.dark {
+  --footer-bg: #111111;
+  --footer-text: #ffffff;
+  --footer-muted: #b5b5b5;
+  --footer-accent: #d4ff00;
+  --footer-hover: #d4ff00;
+  --footer-border: #333333;
+}

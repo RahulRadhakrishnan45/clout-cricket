@@ -32,7 +32,7 @@ const BatRepair = () => {
     );
 
     return (
-        <section className='bat-repair'>
+        <section className='bat-repair' id='bat-repair'>
 
             <div className="repair-content">
 
