@@ -59,6 +59,7 @@ const brands: Brand[] = [
 const Brands = () => {
     return (
         <section className="brands-section">
+            <div className="page-container">
 
             <div className="brands-header">
 
@@ -90,7 +91,7 @@ const Brands = () => {
                     ))}
                 </div>
             </div>
-
+            </div>
         </section>
     )
 }

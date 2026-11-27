@@ -1,7 +1,6 @@
 
 .origin-manifesto {
   width: 100%;
-  padding: 110px 7%;
   background: var(--manifesto-bg);
   color: var(--manifesto-text);
   transition: background 0.3s ease, color 0.3s ease;

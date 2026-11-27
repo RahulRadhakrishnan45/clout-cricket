@@ -36,6 +36,7 @@ const BatRepair = () => {
 
   return (
     <section className="bat-repair" id="bat-repair">
+      <div className="page-container">
       <div className="repair-content">
         <div className="repair-info">
           <span className="repair-eyebrow">
@@ -98,6 +99,7 @@ const BatRepair = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

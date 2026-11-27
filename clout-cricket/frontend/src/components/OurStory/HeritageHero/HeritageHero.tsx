@@ -26,6 +26,7 @@ const heritageDetails = [
 const HeritageHero = () => {
   return (
     <section className="heritage-hero">
+      <div className="page-container">
 
       <div className="heritage-topbar">
         <span className="heritage-tag">
@@ -74,7 +75,7 @@ const HeritageHero = () => {
           </div>
         ))}
       </div>
-
+    </div>
     </section>
   );
 };

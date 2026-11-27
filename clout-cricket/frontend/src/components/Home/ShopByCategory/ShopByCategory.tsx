@@ -64,6 +64,7 @@ const categories: Category[] = [
 const ShopByCategory = () => {
     return (
         <section className="shop-category-section">
+            <div className="page-container">
             <div className="shop-category-header">
                 <div className="shop-category-heading">
                     <span className="section-eyebrow">
@@ -85,6 +86,7 @@ const ShopByCategory = () => {
                 {categories.map((category) => (
                     <CategoryCard key={category.id} {...category} />
                 ))}
+            </div>
             </div>
         </section>
     )

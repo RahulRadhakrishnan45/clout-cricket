@@ -3,6 +3,10 @@ html {
 }
 
 :root {
+
+  --container-width: 1280px;
+  --container-padding: 24px;
+
   /* Footer */
   --footer-bg: #f5f5f5;
   --footer-text: #111111;
@@ -25,6 +29,36 @@ html {
   --manifesto-muted: #666666;
   --manifesto-border: #dddddd;
   --manifesto-accent: #dc2626;
+
+  /* Pillars of Clout */
+  --pillars-bg: #ffffff;
+  --pillars-card-bg: #f5f5f5;
+  --pillars-text: #111111;
+  --pillars-muted: #666666;
+  --pillars-border: #dddddd;
+
+  /* Home Studio Visit */
+  --studio-bg: #f5f5f5;
+  --studio-text: #111111;
+  --studio-muted: #555555;
+  --studio-label-bg: #e5e5e5;
+  --studio-caption-bg: #e5e5e5;
+  --studio-caption-text: #555555;
+  --studio-accent: #DC2626;
+
+  /* Closing CTA */
+  --closing-cta-bg: #ffffff;
+  --closing-cta-text: #171717;
+  --closing-cta-description: #555555;
+  --closing-cta-muted: #777777;
+  --closing-cta-primary-bg: #171717;
+  --closing-cta-primary-text: #ffffff;
+  --closing-cta-primary-hover: #333333;
+  --closing-cta-secondary-bg: #e9e9e9;
+  --closing-cta-secondary-text: #171717;
+  --closing-cta-secondary-hover: #171717;
+  --closing-cta-secondary-hover-text: #ffffff;
+  --closing-cta-border: #d5d5d5;
 }
 
 html.dark {
@@ -50,4 +84,48 @@ html.dark {
   --manifesto-muted: #aaaaaa;
   --manifesto-border: #333333;
   --manifesto-accent: #dc2626;
+
+  /* Pillars of Clout */
+  --pillars-bg: #111111;
+  --pillars-card-bg: #1c1c1c;
+  --pillars-text: #ffffff;
+  --pillars-muted: #aaaaaa;
+  --pillars-border: #333333;
+
+  /* Home Studio Visit */
+  --studio-bg: #111111;
+  --studio-text: #f5f5f5;
+  --studio-muted: #aaaaaa;
+  --studio-label-bg: #222222;
+  --studio-caption-bg: #222222;
+  --studio-caption-text: #aaaaaa;
+  --studio-accent: #DC2626;
+
+  /* Closing CTA - Dark Mode */
+  --closing-cta-bg: #292929;
+  --closing-cta-text: #eeeeee;
+  --closing-cta-description: #d0d0d0;
+  --closing-cta-muted: #999999;
+  --closing-cta-primary-bg: #eeeeee;
+  --closing-cta-primary-text: #171717;
+  --closing-cta-primary-hover: #ffffff;
+  --closing-cta-secondary-bg: #1c1c1c;
+  --closing-cta-secondary-text: #eeeeee;
+  --closing-cta-secondary-hover: #eeeeee;
+  --closing-cta-secondary-hover-text: #171717;
+  --closing-cta-border: #333333;
+}
+
+.page-container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+@media (min-width: 769px) {
+  .page-container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }

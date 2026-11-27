@@ -13,6 +13,8 @@ const OriginManifesto = () => {
   return (
     <section className="origin-manifesto">
 
+      <div className="page-container">
+
       <div className="origin-container">
 
         <div className="origin-visuals">
@@ -201,7 +203,7 @@ const OriginManifesto = () => {
         </div>
 
       </div>
-
+    </div>
     </section>
   );
 };

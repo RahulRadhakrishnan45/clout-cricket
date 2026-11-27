@@ -11,6 +11,7 @@ const FindUs = () => {
 
     return (
         <Box py={{ base:12, md:20 }} id="find-us">
+            <div className="page-container">
             <Container maxW="1200px">
                 <Flex direction="column" align="center" textAlign="center" mb={10}>
                     <Heading size={{ base:"xl", md:"2xl" }}>
@@ -49,7 +50,9 @@ const FindUs = () => {
                         Get Directions →
                     </Button>
                 </Flex>
+                
             </Container>
+            </div>
         </Box>
     )
 }

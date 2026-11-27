@@ -4,6 +4,7 @@ import { WHATSAPP_LINK } from '../../constants/contact'
 const Footer = () => {
     return (
         <footer className='footer'>
+            <div className="page-container">
 
             <div className="footer-container">
 
@@ -45,6 +46,7 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
+          </div>
         </footer>
     )
 }

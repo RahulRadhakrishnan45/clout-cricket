@@ -1,9 +1,7 @@
 
 
-
 .heritage-hero {
   width: 100%;
-  padding: 40px 1%;
   background: var(--story-bg);
   color: var(--story-text);
   transition:
